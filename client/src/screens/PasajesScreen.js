@@ -5,7 +5,6 @@ import {
   Grid,
   MenuItem,
   GridListTileBar,
-  IconButton,
   GridListTile,
   ListSubheader,
   GridList,
@@ -18,7 +17,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { listDestinos, listPasajes } from "../actions/pasajesActions";
 import MessageBox from "../components/MessageBox";
 import InputLabel from "@material-ui/core/InputLabel";
-import InfoIcon from "@material-ui/icons/Info";
 import SentimentVeryDissatisfiedIcon from "@material-ui/icons/SentimentVeryDissatisfied";
 import SentimentVerySatisfiedIcon from "@material-ui/icons/SentimentVerySatisfied";
 import ListIcon from "@material-ui/icons/List";
@@ -145,7 +143,7 @@ export default function PasajesScreen(props) {
       </Grid>
       {loading ? (
         <Grid container justify="center">
-          <ReactLoading color="#ffae00" type="spin" />
+          <ReactLoading color="#108cff" type="spin" />
         </Grid>
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>

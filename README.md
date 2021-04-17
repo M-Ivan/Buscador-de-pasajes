@@ -1,6 +1,6 @@
 # Buscador de pasajes
 
-![buscador](/template/images/buscadorpasajes.png)
+![buscador](/template/images/buscadorPasajes.png)
 
 ## Demo online del proyecto:
 

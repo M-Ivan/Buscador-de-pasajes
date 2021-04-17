@@ -26,6 +26,7 @@ import DataUsageIcon from "@material-ui/icons/DataUsage";
 import StorageIcon from "@material-ui/icons/Storage";
 import PublishIcon from "@material-ui/icons/Publish";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
+import ResponsiveImgMaterialUi from "responsive-responsive-img-material-ui";
 
 export default function HomeScreen(props) {
   const classes = useStyles();
@@ -103,12 +104,20 @@ export default function HomeScreen(props) {
               </Grid>
             </Typography>
           </Grid>
-          <Grid container justify="center"></Grid>
+          <Grid container justify="center">
+            <Box className={classes.logo}>
+              {" "}
+              <ResponsiveImgMaterialUi
+                lg="/images/pasajeslg.jpg"
+                md="/images/pasajessm.jpg"
+              />
+            </Box>
+          </Grid>
         </Grid>
         <Divider style={{ marginBottom: "1rem" }} />
         {loading ? (
           <Grid container justify="center">
-            <ReactLoading color="#ffae00" type="spin" />{" "}
+            <ReactLoading color="#108cff" type="spin" />{" "}
           </Grid>
         ) : error ? (
           <Grid container justify="center">

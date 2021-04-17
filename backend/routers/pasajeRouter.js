@@ -136,7 +136,7 @@ pasajeRouter.post(
           : // Tambien puede especificarse manualmente
           req.body.image
           ? req.body.image
-          : "/images/flybondi.com.jpg",
+          : "/images/pasaje.jpg",
     });
     console.log(pasaje);
     const createdPasaje = await pasaje.save();
